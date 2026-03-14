@@ -1,9 +1,10 @@
-export interface RectangleShape {
-  width: number;
-  height: number;
+import type { RectangleParameters } from '../types';
+
+export interface RectangleShape extends RectangleParameters {
+  // Additional rectangle-specific properties can be added here
 }
 
-export const defaultRectangle: RectangleShape = {
+export const defaultRectangle: RectangleParameters = {
   width: 100,
   height: 50
 };
