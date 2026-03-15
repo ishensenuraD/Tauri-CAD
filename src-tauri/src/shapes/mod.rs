@@ -25,11 +25,16 @@ pub use triangle::{generate_equilateral_triangle, generate_right_triangle};
 pub use trapezoid::{generate_isosceles_trapezoid, generate_right_trapezoid};
 pub use lshape::{generate_l_shape_bottom_left, generate_l_shape_bottom_right, generate_l_shape_top_left};
 
-// Master generator and utilities
+// Master generator and utilities with transformations
 pub use generator::{
     generate_shape_from_config,
+    generate_shape_with_transforms,
+    generate_shape_around_center,
     get_default_config,
     validate_shape_config,
     get_required_parameters,
     get_parameter_description,
+    get_shape_bounds,
+    get_shape_center,
+    apply_transformations,
 };
